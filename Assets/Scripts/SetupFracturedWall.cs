@@ -29,10 +29,9 @@ public class SetupFracturedWall : MonoBehaviour
             }
         }
     }
-    
-    bool AreAdjacent(Transform a, Transform b) 
+
+    bool AreAdjacent(Transform a, Transform b)
     {
-        // Simple distance check - can be improved
         return Vector3.Distance(a.position, b.position) < 1.5f;
     }
 }
